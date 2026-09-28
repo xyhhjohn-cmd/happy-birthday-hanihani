@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#3b211b">
+
+  <title>Happy Birthday, Honney 💗</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <div id="transition"></div>
+
+  <div class="ambient ambient-one"></div>
+  <div class="ambient ambient-two"></div>
+  <div class="grain"></div>
+
+  <!-- =========================
+       INTRO
+  ========================== -->
+
+  <section class="scene active" id="intro">
+
+    <div class="intro-content">
+
+      <div class="mini-title">
+        A LITTLE SOMETHING FOR YOU
+      </div>
+
+      <div class="sparkle">✦</div>
+
+      <h1>
+        Hey,<br>
+        <span>Honney.</span>
+      </h1>
+
+      <p>
+        I made something for you...<br>
+        so please, stay until the end. 👀
+      </p>
+
+      <button class="main-btn" id="startBtn">
+        OPEN MY SURPRISE
+        <b>→</b>
+      </button>
+
+    </div>
+
+  </section>
+
+
+  <!-- =========================
+       BIRTHDAY REVEAL
+  ========================== -->
+
+  <section class="scene" id="birthday">
+
+    <div class="birthday-content">
+
+      <div class="cake">🎂</div>
+
+      <div class="eyebrow">
+        TODAY IS YOUR DAY
+      </div>
+
+      <h2>
+        HAPPY<br>
+        <span>BIRTHDAY</span>
+      </h2>
+
+      <div class="name">
+        HONNEY 💗
+      </div>
+
+      <p>
+        Happy Birthday sa imo, Honney! 🥳<br>
+        Enjoy your day, smile a lot,
+        and ayaw sa ka-stress karon. 😂
+      </p>
+
+      <button class="main-btn next" data-next="funny">
+        CONTINUE
+        <b>→</b>
+      </button>
+
+    </div>
+
+  </section>
+
+
+  <!-- =========================
+       FUNNY ERROR
+  ========================== -->
+
+  <section class="scene" id="funny">
+
+    <div class="computer">
+
+      <div class="computer-bar">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
+      <div class="computer-screen">
+
+        <p>
+          &gt; Starting birthday.exe
+        </p>
+
+        <p>
+          &gt; Searching for Honney...
+        </p>
+
+        <p>
+          &gt; Checking birthday status...
+        </p>
+
+        <div class="progress">
+          <div id="progressBar"></div>
+        </div>
+
+        <div class="percentage" id="percentage">
+          0%
+        </div>
+
+        <div id="loadingText">
+          Loading...
+        </div>
+
+        <div id="errorMessage" class="hidden">
+
+          <div class="laugh">
+            😂
+          </div>
+
+          <h3>
+            SYSTEM ERROR
+          </h3>
+
+          <p>
+            Too much ka-cute detected.
+          </p>
+
+          <p>
+            System cannot handle this level
+            of ka-special. 😭
+          </p>
+
+          <button class="main-btn" id="fixBtn">
+            FIX SYSTEM 😂
+          </button>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- =========================
+       DRAGON JOKE
+  ========================== -->
+
+  <section class="scene" id="dragon">
+
+    <div class="dragon-content">
+
+      <div class="dragon-icon">
+        🐉
+      </div>
+
+      <div class="eyebrow">
+        IMPORTANT ANNOUNCEMENT
+      </div>
+
+      <h2>
+        AYAW NA SEGIG<br>
+        <span>DRAGON²</span> 😂
+      </h2>
+
+      <p>
+        Birthday nimo karon oh. 😂<br>
+        Relax sa gamay, enjoy your day,
+        ug ayaw sige'g dragon² diha.
+      </p>
+
+      <div class="dragon-small">
+        Yes, ikaw gyud akong pasabot. 😭
+      </div>
+
+      <button class="main-btn next" data-next="photo">
+        SORRY NA 😂
+        <b>→</b>
+      </button>
+
+    </div>
+
+  </section>
+
+
+  <!-- =========================
+       ONE PHOTO
+  ========================== -->
+
+  <section class="scene" id="photo">
+
+    <div class="photo-content">
+
+      <div class="photo-label">
+        ONE SPECIAL MEMORY
+      </div>
+
+      <div class="photo-frame">
+
+        <div class="photo-light"></div>
+
+        <img
+          src="photo.jpg"
+          alt="Our special memory"
+        >
+
+      </div>
+
+      <h2>
+        One picture.<br>
+        <span>One special memory.</span>
+      </h2>
+
+      <p>
+        Dili kinahanglan daghan ug pictures
+        para ma-remind ko kung unsa ka ka-special.
+        💗
+      </p>
+
+      <button class="main-btn next" data-next="videoIntro">
+        THERE'S MORE
+        <b>→</b>
+      </button>
+
+    </div>
+
+  </section>
+
+
+  <!-- =========================
+       VIDEO COUNTDOWN
+  ========================== -->
+
+  <section class="scene" id="videoIntro">
+
+    <div class="video-intro">
+
+      <div class="eyebrow">
+        ONE LITTLE SURPRISE
+      </div>
+
+      <h2>
+        Wait...
+      </h2>
+
+      <p>
+        Naa pa koy ipakita nimo. 👀
+      </p>
+
+      <div id="countdown">
+        3
+      </div>
+
+      <small>
+        GET READY...
+      </small>
+
+    </div>
+
+  </section>
+
+
+  <!-- =========================
+       VIDEO
+  ========================== -->
+
+  <section class="scene" id="videoScene">
+
+    <div class="video-content">
+
+      <div class="video-title">
+        🎂 HAPPY BIRTHDAY, HONNEY
+      </div>
+
+      <div class="video-box">
+
+        <video
+          id="birthdayVideo"
+          playsinline
+          preload="auto"
+        >
+          <source
+            src="birthday-video.mp4"
+            type="video/mp4"
+          >
+        </video>
+
+        <div
+          class="video-start"
+          id="videoStart"
+        >
+          ▶
+        </div>
+
+      </div>
+
+      <p class="video-caption">
+        A little birthday greeting just for you. 💗
+      </p>
+
+      <button
+        class="main-btn hidden"
+        id="videoNext"
+      >
+        CONTINUE
+        <b>→</b>
+      </button>
+
+    </div>
+
+  </section>
+
+
+  <!-- =========================
+       SILENCE AFTER VIDEO
+  ========================== -->
+
+  <section class="scene" id="silence">
+
+    <div class="silence-content">
+
+      <div class="small-heart">
+        ♡
+      </div>
+
+      <p>
+        Okay...
+      </p>
+
+      <h2>
+        Now,<br>
+        something serious.
+      </h2>
+
+      <div class="pause-line"></div>
+
+      <button
+        class="main-btn"
+        id="silenceNext"
+      >
+        CONTINUE
+        <b>→</b>
+      </button>
+
+    </div>
+
+  </section>
+
+
+  <!-- =========================
+       HONNEY BAL
+  ========================== -->
+
+  <section class="scene" id="serious">
+
+    <div class="serious-content">
+
+      <div class="eyebrow">
+        FROM MY HEART
+      </div>
+
+      <h2>
+        HONNEY<br>
+        <span>(BAL😘)</span>
+      </h2>
+
+      <p>
+        Okay, wala na'y joke diri. 😂
+      </p>
+
+      <p>
+        This time, seryoso na gyud ko.
+      </p>
+
+      <button class="main-btn" id="letterBtn">
+        READ THIS 💌
+        <b>→</b>
+      </button>
+
+    </div>
+
+  </section>
+
+
+  <!-- =========================
+       LETTER
+  ========================== -->
+
+  <section class="scene" id="letter">
+
+    <div class="letter-wrapper">
+
+      <div class="letter-header">
+        💌
+        <span>FOR MY HONNEY</span>
+      </div>
+
+      <div class="letter">
+
+        <h2>
+          Happy Birthday, Honney. 💗
+        </h2>
+
+        <div id="typedLetter"></div>
+
+        <button
+          class="main-btn hidden"
+          id="giftBtn"
+        >
+          ONE LAST THING
+          <b>→</b>
+        </button>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- =========================
+       FINAL GIFT
+  ========================== -->
+
+  <section class="scene" id="final">
+
+    <div class="final-content">
+
+      <div class="eyebrow">
+        BEFORE YOU GO...
+      </div>
+
+      <h2>
+        Naa pa koy<br>
+        <span>last surprise.</span>
+      </h2>
+
+      <button
+        id="gift"
+        class="gift"
+      >
+        🎁
+
+        <small>
+          OPEN ME
+        </small>
+      </button>
+
+
+      <div
+        id="finalMessage"
+        class="hidden final-message"
+      >
+
+        <div class="celebrate">
+          🎉 🎂 🎉
+        </div>
+
+        <h3>
+          HAPPY BIRTHDAY,
+          <span>HONNEY!</span>
+        </h3>
+
+        <p>
+          I hope this little surprise made you
+          smile, laugh, and feel special today. 💗
+        </p>
+
+        <p>
+          Dili man ni perfect,
+          pero gihimo nako ni with genuine effort
+          para nimo.
+        </p>
+
+        <div class="quote">
+          “You deserve beautiful memories,
+          genuine happiness, and many more
+          birthdays to come.”
+        </div>
+
+        <div class="signature">
+          — From someone who wanted
+          to make you smile. 💗
+        </div>
+
+        <button
+          class="main-btn"
+          onclick="location.reload()"
+        >
+          EXPERIENCE AGAIN
+          <b>↻</b>
+        </button>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- =========================
+       AUDIO
+  ========================== -->
+
+  <audio
+    id="backgroundMusic"
+    loop
+    preload="auto"
+  >
+    <source
+      src="birthday.mp3"
+      type="audio/mpeg"
+    >
+  </audio>
+
+
+  <div id="confetti"></div>
+
+
+  <script src="script.js"></script>
+
+</body>
+</html>
